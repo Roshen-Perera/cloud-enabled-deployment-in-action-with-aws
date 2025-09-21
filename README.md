@@ -116,8 +116,6 @@ Here’s the refined **How to Use** section for your README:
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-## Screen Recording  
-
-📺 **Demo Video:**  
+## 📺 Demo Video 
 
 [Watch the Demo](https://drive.google.com/file/d/1fR5ymoXTiBX4oafCqJXSN9y7ULIwz1cK/view?usp=drive_link)
