@@ -106,8 +106,6 @@ This repository contains four projects:
 * **Student ID**: 2301671023
 * **Email**: [roshenpilishiyanperera@gmail.com](mailto:roshenpilishiyanperera@gmail.com)
 
-## License
-
 ## License  
 
 This project is licensed under the [MIT License](./LICENSE).
