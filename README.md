@@ -108,7 +108,7 @@ This repository contains four projects:
 
 ## License  
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License](./License.txt).
 
 ## Demo Video 
 
