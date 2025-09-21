@@ -56,12 +56,6 @@ This repository contains four projects:
   * `npm run preview` → Preview built app
 
 ## How to Use
-Got it 👍 You want to **expand the usage steps** so they clearly mention choosing modules in IntelliJ IDEA, resolving Maven dependencies, and starting services one by one before the frontend.
-
-Here’s the refined **How to Use** section for your README:
-
-
-## How to Use
 
 1. **Clone the repository**  
 
@@ -114,10 +108,10 @@ Here’s the refined **How to Use** section for your README:
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+## License  
 
-## Screen Recording  
+This project is licensed under the [MIT License](./LICENSE).
 
-📺 **Demo Video:**  
+## Demo Video 
 
 [Watch the Demo](https://drive.google.com/file/d/1fR5ymoXTiBX4oafCqJXSN9y7ULIwz1cK/view?usp=drive_link)
