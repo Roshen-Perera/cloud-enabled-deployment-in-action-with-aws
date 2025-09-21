@@ -7,13 +7,11 @@ This repository contains four projects:
 * **media-service** (Spring Boot + Local file storage, can be extended to S3/MinIO)
 * **frontend-app** (React + TypeScript)
 
----
-
 ## Backend Services
 
 ### 1. course-service
 
-* **Entity**: Course(id, name, duration)
+* **Entity**: `Course(id, name, duration)`
 * **Endpoints**:
 
   * `GET /courses`
@@ -21,13 +19,11 @@ This repository contains four projects:
   * `POST /courses`
   * `DELETE /courses/{id}`
 * **Default port**: `8081`
-* Configure **MySQL** settings
-
----
+* Configure **MySQL** settings in `application.properties`.
 
 ### 2. student-service
 
-* **Document**: Student(registrationNumber, fullName, address, contact, email)
+* **Document**: `Student(registrationNumber, fullName, address, contact, email)`
 * **Endpoints**:
 
   * `GET /students`
@@ -35,9 +31,7 @@ This repository contains four projects:
   * `POST /students`
   * `DELETE /students/{id}`
 * **Default port**: `8082`
-* Configure **MongoDB** settings
-
----
+* Configure **MongoDB** settings in `application.properties`.
 
 ### 3. media-service
 
@@ -51,8 +45,6 @@ This repository contains four projects:
 * **Default port**: `8083`
 * Uses local disk storage at `./data/media` by default (override with env var `MEDIA_STORAGE_DIR`).
 
----
-
 ## Frontend (frontend-app)
 
 * Built with **React + TypeScript + MUI + Axios + Vite**
@@ -63,37 +55,69 @@ This repository contains four projects:
   * `npm run build` → TypeScript build + Vite build
   * `npm run preview` → Preview built app
 
----
+## How to Use
+Got it 👍 You want to **expand the usage steps** so they clearly mention choosing modules in IntelliJ IDEA, resolving Maven dependencies, and starting services one by one before the frontend.
 
-## Build Instructions
+Here’s the refined **How to Use** section for your README:
 
-* **Backend**: Run
 
-  ```sh
-  mvn -q -e -DskipTests package
-  ```
+## How to Use
 
-  at the repo root to build services.
+1. **Clone the repository**  
 
-* **Frontend**: Run
+   ```sh
+   git clone https://github.com/your-username/cloud-enabled-deployment-in-action-with-aws.git
+   cd aws-cloud-deployment-demo
+   ```
 
-  ```sh
-  cd frontend-app
-  npm install
-  npm run dev
-  ```
+2. **Open in IntelliJ IDEA**
 
----
+   * Choose **"Open as Project"** → IntelliJ will detect the Maven projects.
+   * Select all backend services (`course-service`, `student-service`, `media-service`) as **modules** in the project structure.
+
+3. **Resolve Maven dependencies**
+
+   * IntelliJ will automatically import Maven.
+   * If needed, right-click on the project → **Maven → Reload Project** to download all dependencies.
+
+4. **Build Backend Services**
+
+   ```sh
+   mvn -q -e -DskipTests package
+   ```
+
+5. **Run each service one by one** (in IntelliJ or via terminal):
+
+   ```sh
+   java -jar course-service/target/course-service.jar
+   java -jar student-service/target/student-service.jar
+   java -jar media-service/target/media-service.jar
+   ```
+
+6. **Start Frontend**
+
+   ```sh
+   cd frontend-app
+   npm install
+   npm run dev
+   ```
+
+7. Open your browser at:
+   👉 [http://localhost:5173](http://localhost:5173)
+
 
 ## Author
 
-**Name**: Roshen Perera
-**Student ID**: 2301671023
+* **Name**: Roshen Perera
+* **Student ID**: 2301671023
+* **Email**: [roshenpilishiyanperera@gmail.com](mailto:roshenpilishiyanperera@gmail.com)
 
----
+## License
 
-## Screen Recording
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-📺 [Watch the Demo](https://example.com/screen-recording-link)
+## Screen Recording  
 
----
+📺 **Demo Video:**  
+
+[Watch the Demo](https://drive.google.com/file/d/1fR5ymoXTiBX4oafCqJXSN9y7ULIwz1cK/view?usp=drive_link)
