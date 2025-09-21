@@ -1,5 +1,3 @@
----
-
 # Cloud Enabled Deployment In Action with AWS
 
 This repository contains four projects:
